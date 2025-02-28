@@ -2,6 +2,51 @@ html {
     font-family: 'Segoe UI', sans-serif; // Font
     font-size: 16px; // Font mérete (16px=12pt)
     line-height: 1.5; // Sormagasság, 16px*1.5=24px, tipikus mostanában
-    background: #333336; // Sötét téma sötét háttérrel
-    color: white; // Sötét téma fehér betűkkel
+    background: white; // Sötét téma sötét háttérrel
+    color: black; // Sötét téma fehér betűkkel
+    display: flex;
+}
+
+body {
+    margin: 0; // Margók eltüntetése
+    padding: 0; // Töltések eltüntetése
+    overflow: hidden; // Túlcsordulások eltüntetése
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100vw;
+    height: 100vh;
+}
+.app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.generatebutton {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.generatebutton:hover {
+    background-color:darkgreen;
+    
+
 }
